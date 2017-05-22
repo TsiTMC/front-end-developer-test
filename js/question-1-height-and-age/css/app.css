@@ -1,0 +1,32 @@
+.card-4
+{
+    box-shadow: 0 3px 20px 10px rgba(0,0,0,.19);
+}
+
+.padding-small
+{
+    padding: 10px;
+}
+
+#input-result
+{
+    font-size: 26px;
+    font-family: 'Times New Roman';
+}
+
+#result
+{
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+
+#result>h2
+{
+    color: lightcoral;
+}
+
+#result>h3
+{
+    margin: 0;
+}

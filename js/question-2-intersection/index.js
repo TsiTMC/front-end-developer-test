@@ -8,13 +8,28 @@
  *
  */
 
+var initialArray = [];
+
 var firstArray = [2, 2, 4, 1];
 var secondArray = [1, 2, 0, 2];
 
 function findIntersection (arr1, arr2) {
-
-    // TODO: [Your code here]
-
+    var result = [];
+    
+    for(var i = 0; i < arr1.length; i++)
+    {
+        initialArray[arr1[i]] = arr1[i];
+    }
+    
+    for(var i = 0; i < initialArray.length; i++)
+    {
+        if(arr2.indexOf(initialArray[i])!==-1)
+        {
+            result.push(initialArray[i]);
+        }
+    }
+    
+    return result;
 }
 
 var intersection = findIntersection(firstArray, secondArray);
